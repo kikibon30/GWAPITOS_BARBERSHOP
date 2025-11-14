@@ -1,0 +1,57 @@
+BARBERSHOP_APP/
+├── 📁 expo/
+│   ├── devices.json
+│   └── README.md
+├── 📁 .vscode/
+│   └── .react
+├── 📁 assets/ ⚠️ **NEEDS ASSETS**
+│   ├── adaptive-icon.png
+│   ├── favicon.png
+│   ├── icon.png
+│   └── splash-icon.png
+├── 📁 node_modules/
+├── 📁 src/
+│   ├── 📁 components/ ✅ **COMPLETED**
+│   │   ├── AuthHeader.js          # 🔐 Authentication header component
+│   │   ├── Button.js              # 🎛️ Reusable button component
+│   │   ├── InputField.js          # ⌨️ Form input field component
+│   │   └── RoleSelector.js        # 👥 User role selection component
+│   │
+│   ├── 📁 config/ ⚠️ **SETUP PENDING**
+│   │   └── supabase.js            # 🗄️ Supabase database configuration
+│   │
+│   ├── 📁 constants/ ⚠️ **SETUP PENDING**
+│   │   └── userRoles.js           # 🏷️ User role definitions
+│   │
+│   ├── 📁 context/ ✅ **COMPLETED**
+│   │   └── AuthContext.js         # 🔑 Authentication state management
+│   │
+│   ├── 📁 screens/ ✅ **COMPLETED**
+│   │   ├── 📁 auth/
+│   │   │   ├── LoginScreen.js     # 🔑 User login screen
+│   │   │   ├── RoleSelectionScreen.js # 👥 Role selection screen
+│   │   │   ├── SignupScreen.js    # 📝 User registration screen
+│   │   │   └── WelcomeScreen.js   # 🎉 App introduction screen
+│   │   └── 📁 common/
+│   │       ├── ErrorScreen.js     # ❌ Error handling screen
+│   │       └── LoadingScreen.js   # ⏳ Loading state screen
+│   │
+│   ├── 📁 services/ ⚠️ **SETUP PENDING**
+│   │   └── authService.js         # 🔐 Authentication API services
+│   │
+│   ├── 📁 styles/ ✅ **COMPLETED**
+│   │   ├── colors.js              # 🎨 Color palette definitions
+│   │   ├── globalStyles.js        # 🎯 Global style components
+│   │   ├── spacing.js             # 📏 Spacing and layout constants
+│   │   └── typography.js          # 🔤 Font and text styles
+│   │
+│   └── 📁 utils/ ⚠️ **SETUP PENDING**
+│       └── validation.js          # ✅ Input validation utilities
+│
+├── 📄 .gitignore
+├── 📄 App.js ✅ **COMPLETED**     # 🚀 Main application component
+├── 📄 app.json
+├── 📄 index.js ✅ **COMPLETED**   # 📱 App entry point
+├── 📄 package-lock.json
+├── 📄 package.json
+└── 📄 project_structure.txt

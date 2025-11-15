@@ -20,24 +20,38 @@ BARBERSHOP_APP/
 │   ├── 📁 config/ ⚠️ **SETUP PENDING**
 │   │   └── supabase.js            # 🗄️ Supabase database configuration
 │   │
-│   ├── 📁 constants/ ⚠️ **SETUP PENDING**
-│   │   └── userRoles.js           # 🏷️ User role definitions
+│   ├── 📁 constants/ ⚠️ **UPDATED**
+│   │   └── userRoles.js           # 🏷️ User role definitions + ADMIN_PERMISSIONS
 │   │
 │   ├── 📁 context/ ✅ **COMPLETED**
 │   │   └── AuthContext.js         # 🔑 Authentication state management
 │   │
-│   ├── 📁 screens/ ✅ **COMPLETED**
+│   ├── 📁 screens/ ✅ **UPDATED**
 │   │   ├── 📁 auth/
 │   │   │   ├── LoginScreen.js     # 🔑 User login screen
 │   │   │   ├── RoleSelectionScreen.js # 👥 Role selection screen
 │   │   │   ├── SignupScreen.js    # 📝 User registration screen
 │   │   │   └── WelcomeScreen.js   # 🎉 App introduction screen
-│   │   └── 📁 common/
-│   │       ├── ErrorScreen.js     # ❌ Error handling screen
-│   │       └── LoadingScreen.js   # ⏳ Loading state screen
+│   │   ├── 📁 common/
+│   │   │   ├── ErrorScreen.js     # ❌ Error handling screen
+│   │   │   └── LoadingScreen.js   # ⏳ Loading state screen
+│   │   ├── 📁 admin/ 🆕 **ADDED**
+│   │   │   ├── AdminDashboard.js      # 🏠 Admin main dashboard
+│   │   │   ├── ScheduleManagement.js  # 📅 Manage all schedules
+│   │   │   ├── UserManagement.js      # 👥 Manage users & roles
+│   │   │   └── SystemSettings.js      # ⚙️ System configuration
+│   │   └── 📁 customer/ 🆕 **ADDED**
+│   │       ├── CustomerDashboard.js   # 🏠 Customer main dashboard
+│   │       ├── BookAppointment.js     # 📅 Book new appointment
+│   │       ├── MyAppointments.js      # 📋 View my appointments
+│   │       ├── BarberList.js          # 💈 Browse barbers
+│   │       └── Services.js            # ✂️ View services
 │   │
-│   ├── 📁 services/ ⚠️ **SETUP PENDING**
-│   │   └── authService.js         # 🔐 Authentication API services
+│   ├── 📁 services/ ⚠️ **UPDATED**
+│   │   ├── authService.js         # 🔐 Authentication API services + getAdminDashboard()
+│   │   ├── scheduleService.js     # 🆕 Schedule management API calls
+│   │   ├── adminService.js        # 🆕 Admin-specific API calls
+│   │   └── customerService.js     # 🆕 Customer-specific API calls
 │   │
 │   ├── 📁 styles/ ✅ **COMPLETED**
 │   │   ├── colors.js              # 🎨 Color palette definitions
@@ -49,9 +63,9 @@ BARBERSHOP_APP/
 │       └── validation.js          # ✅ Input validation utilities
 │
 ├── 📄 .gitignore
-├── 📄 App.js ✅ **COMPLETED**     # 🚀 Main application component
+├── 📄 App.js ⚠️ **NEEDS UPDATE**  # 🚀 Need to add admin & customer navigation
 ├── 📄 app.json
 ├── 📄 index.js ✅ **COMPLETED**   # 📱 App entry point
 ├── 📄 package-lock.json
-├── 📄 package.json
+├── 📄 package.json ⚠️ **NEEDS UPDATE** # 📦 Add datetimepicker dependency
 └── 📄 project_structure.txt

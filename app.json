@@ -1,0 +1,75 @@
+{
+  "expo": {
+    "name": "BarberShop_app",
+    "slug": "BarberShop_app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location to show nearby barbershops."
+        }
+      ]
+    ],
+    
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.barbershopapp",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to show nearby barbershops.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app uses your location to show nearby barbershops.",
+        "NSLocationAlwaysUsageDescription": "This app uses your location to show nearby barbershops.",
+        "LSApplicationQueriesSchemes": ["googlemaps", "comgooglemaps"]
+      }
+    },
+    
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ],
+      "package": "com.yourcompany.barbershopapp",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "geo"
+            },
+            {
+              "scheme": "http",
+              "host": "*.google.com",
+              "pathPrefix": "/maps"
+            },
+            {
+              "scheme": "https",
+              "host": "*.google.com",
+              "pathPrefix": "/maps"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
